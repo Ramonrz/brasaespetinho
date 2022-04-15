@@ -89,8 +89,11 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
+const footer = document.getElementsByClassName('footer__copy')[0];
+footer.innerHTML = `&#169; ` + new Date().getFullYear() + ' ' + footer.textContent;
+
 /*==================== SCROLL REVEAL ANIMATION ====================*/
-const sr = ScrollReveal({
+/*const sr = ScrollReveal({
     origin: 'top',
     distance: '30px',
     duration: 2000,
@@ -104,4 +107,4 @@ sr.reveal(`.home__data, .home__img,
             .contact__data, .contact__button,
             .footer__content`, {
     interval: 200
-})
+})*/
