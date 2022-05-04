@@ -109,7 +109,7 @@ img{
 
 /*========== CLASS CSS ==========*/
 .section{
-  padding: 4rem 0 2rem;
+  padding: 0.5rem 0 0.5rem;
 }
 
 .section-title, .section-subtitle{
@@ -328,6 +328,7 @@ img{
 }
 
 /*========== MENU ==========*/
+
 .menu__container{
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
@@ -345,8 +346,8 @@ img{
 
 .menu__img{
   width: 100px;
+  border-radius: 25% !important;
   align-self: center;
-  margin-bottom: var(--mb-2);
 }
 
 .menu_logo{
@@ -534,6 +535,7 @@ img{
   }
   .menu__img{
     width: 130px;
+    border-radius: 10%;
   }
 
   .app__store{
